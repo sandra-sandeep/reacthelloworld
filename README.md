@@ -11,8 +11,8 @@ In `hello_world.html`, we write JSX in-line in the HTML body; your browser can p
 
 To use the preprocessor, run:
 ```sh
-npx babel --watch src --out-dir . --presets react-app/prod
+npx babel --watch react --out-dir js_generated --presets react-app/prod
 ```
-This command watches for new files in the `src/` folder and converts them to plain Javascript.
+This command watches for new files in the `react/` folder, converts them to plain Javascript, and adds them to the `js_generated` folder.
 
-In your HTML file, use script tags like `<script src="like_button.js"></script>` at the bottom of your html body to refer to the processed JS file with React code. (See the like_button.js example.)
+In your HTML file, use script tags like `<script src="../path/to/file.js"></script>` at the bottom of your html body to refer to the processed JS file. (See the like_button.html example.)
