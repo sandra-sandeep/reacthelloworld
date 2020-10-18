@@ -13,6 +13,6 @@ To use the preprocessor, run:
 ```sh
 npx babel --watch react --out-dir js_generated --presets react-app/prod
 ```
-This command watches for new files in the `react/` folder, converts them to plain Javascript, and adds them to the `js_generated` folder.
+This command watches for new files in the `react/` folder, converts them to plain Javascript, and adds them to the `js_generated` folder. (This command will keep running if you let it; once it has converted all the files you want, you can abort the command with `Ctrl+C`.)
 
 In your HTML file, use script tags like `<script src="../path/to/file.js"></script>` at the bottom of your html body to refer to the processed JS file. (See the like_button.html example.)
