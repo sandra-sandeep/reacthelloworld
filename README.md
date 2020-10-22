@@ -1,18 +1,15 @@
 # React Starter Kit
 
-### Setup
-After cloning this repo and cd-ing into the root, run these commands to install a JSX preprocessor.
-```sh
-npm init -y
-npm install babel-cli@6 babel-preset-react-app@3
-```
-(JSX is an HTML-like syntax that makes writing React code easier and less verbose.
-In `hello_world.html`, we write JSX in-line in the HTML body; your browser can process JSX code, but it's slow. The preprocesser converts JSX code into JS code that's browser- and production-ready.)
+### What's in here?
+There are two basic html pages that have React code in them (`hello_world.html` and `like_button.html`)
 
-To use the preprocessor, run:
-```sh
-npx babel --watch react --out-dir js_generated --presets react-app/prod
-```
-This command watches for new files in the `react/` folder, converts them to plain Javascript, and adds them to the `js_generated` folder. (This command will keep running if you let it; once it has converted all the files you want, you can abort the command with `Ctrl+C`.)
+### Draggable Elements
+We will be using the [react_draggable] library to create react webapps with draggable elements. See the demo [here].(It's better to use well-maintained, feature-full, open-source libraries rather than write your own code, wherever possible. Don't re-invent the wheel!)
 
-In your HTML file, use script tags like `<script src="../path/to/file.js"></script>` at the bottom of your html body to refer to the processed JS file. (See the like_button.html example.)
+To install the library, run:
+```sh
+npm install react-draggable
+```
+
+[react_draggable]: https://www.npmjs.com/package/react-draggable
+[here]: http://strml.github.io/react-draggable/example/
